@@ -1,10 +1,10 @@
 version: "3"
-service:
-  emotionapi:
-  image: emotionapi:latest
-  container_name: emotionapi
-  restart: always
-  ports:
-    - 3000:3000
-  volumes:
-    - ./.env:/opt/app/.env
+service: 
+  top-api:
+    image: top-api:latest
+    container_name: top-api
+    restart: always
+    ports:
+      - 3000:3000
+    volumes:
+      - ./.env:/opt/app/.env
